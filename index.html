@@ -1,53 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba</title>
+    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header class="header">
-        <nav class= "headerMenu" >
-            <a class="headerMenuLink" href="index.html"> Home</a>
-            <a class="headerMenuLink" href="aboutMe.html">Sobre mi</a>
-
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="aboutMe.html">Sobre mí</a></li>
+            </ul>
         </nav>
-   
     </header>
-    <main  class="presentacion">
-        <section  class="presentacionContenido">
-        <h1 class="presentacionContenidoTitulo">Desarrolladora con sólida experiencia en Java. 
-            En proceso de especialización en Tecnologías Oracle </h1> 
-            
-            <p class="presentacionContenidoTexto">
-             ¡Hola! Soy Melina Romero. Soy un desarrollador de software con un año de experiencia en Java,
-             conocimientos basicos de Python y en el desarrollo de aplicaciones sencillas con JavaScript, 
-             HTML y Css. Actualmente, me estoy especializado en tecnologías Oracle a través del Programa 
-             ONE - Oracle Next Education, donde adquiero conocimientos avanzados en bases de datos, desarrollo 
-             en la nube y soluciones empresariales.
 
-            </p>
+    <section class="presentacion container">
+        <div class="presentacion-contenido">
+            <h1>Sobre mí:</h1>
+            <p>Busco oportunidades para contribuir a proyectos desafiantes y seguir creciendo en el campo del desarrollo de software.</p>
+        </div>
+        <div class="presentacion-imagen">
+            <img src="./assets/Imagem.png" alt="Imagen de perfil">
+        </div>
+    </section>
 
-            <div class="presentacionEnlaces"> 
-            <h2 class="presentacionEnlacesSubtitulo">Accede a mis redes:</h2>    
-             <a class="presentacionEnlaceslink" href="https://wa.me/541124697127?text=Hola,%20estoy%20interesado%20en%20conectar%20contigo%20sobre%20tu%20portafolio.
-             " >
-                <img src="./assets/whatsapp.jfif"> 
-                WhatsApp </a>
-             <a class= "presentacionEnlaceslink" href="https://github.com/melinaromero">
-                <img src="./assets/github.png"> 
-                GitHub</a>
-            </div> 
+    <section class="proyectos">
+        <div class="container">
+            <h2>Mis Proyectos</h2>
+            <div class="proyectos-grid">
+                <div class="proyecto">
+                    <img src="./assets/forohub.jpg" alt="Miniatura de la API de un foro">
+                    <h3>Foro</h3>
+                    <p>API REST sencilla para gestionar un foro de tópicos. Acá podés listar, crear, actualizar y eliminar tópicos, todo de manera segura usando tokens JWT. Herramientas: JSON, JWT, Spring Boot. Lenguaje: Java.</p>
+                    <a href="https://github.com/melinaromero/forohub">Ver Proyecto</a>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/conversor (1).jpg" alt="Miniatura de un conversor de monedas">
+                    <h3>Conversor</h3>
+                    <p>Programa que permite convertir una cantidad de pesos argentinos (ARS) a otra moneda utilizando tasas de cambio actuales desde una API de conversión de divisas. Tecnologías y herramientas: Spring Boot, API REST, Maven, RestTemplate, MySQL, JSON. Herramientas de prueba: Postman. Lenguaje: Java.</p>
+                    <a href="https://github.com/melinaromero/conversor">Ver Proyecto</a>
+                </div>
+             
+                    <div class="proyecto">
+                        <img src="./assets/juegoNave Python.png" alt="Miniatura de un juego de disparos">
+                        <h3>Aventura Espacial</h3>
+                        <p>Aventura Espacial es un juego de disparos en el espacio desarrollado en Python usando la librería PyGame. El jugador controla una nave espacial, dispara a asteroides y trata de evitar colisiones. Lenguajes: Python | Librerías y frameworks: PyGame | Herramientas de control de versiones: Git.</p>
+                        <a href="https://github.com/melinaromero/Aventura_Espacial">Ver Proyecto</a>
+                   
+                </div>
+                   <div class="proyecto">
+                <img src="./assets/Encriptador.png" alt="Miniatura de Encriptador de texto">
+                <h3>Encriptador de texto</h3>
+                <p>Hecho con HTML, CSS y JS.</p>
+                <a href="https://encriptador-de-texto-kohl.vercel.app/">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-       </section>
-            <img class="presentacionImagen" src="/assets/Imagem.png" alt="imagen de portafolio" > 
-
-    </main>
-    
     <footer class="footer">
-        <p > Desarrollado por Melina Romero</p>
-
+        <p>Desarrollado por Melina Romero</p>
     </footer>
 </body>
 </html>
