@@ -22,6 +22,27 @@ body {
     color: #fff; /* Texto blanco */
     padding: 1rem 0;
     text-align: center;
+    position: relative; /* Añade esta línea */    
+
+}
+
+.cv-descarga {
+    position: absolute;
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la derecha */
+}
+
+.cv-descarga a {
+    background-color: #22D4F2;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-descarga a:hover {
+    background-color: #1aabc2;
 }
 
 .nav ul {
